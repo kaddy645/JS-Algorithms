@@ -31,3 +31,5 @@ quickSort = function (array, start, end) {
 		quickSort(array, k + 1, end);
 	}
 };
+
+var c=9;
