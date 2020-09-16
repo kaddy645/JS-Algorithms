@@ -58,3 +58,37 @@ var myString = '999 JS Coders';
 var isInt = myString.search(intRegex);
 console.log(isInt);
 //output: -1
+
+
+
+
+//charAt(x) Returns the character at the “x” position within the string.(it also includes spaces)
+var myString = 'Js is Great!!!';
+console.log(myString.charAt(6));
+//output :G
+
+//indexOf(char/substring) indexOf(substr, [start]) Searches and (if found) returns the index number of the searched character or substring within the string. If not found, -1 is returned. “Start” is an optional argument specifying the position within string to begin the search. Default is 0.
+
+
+var sentence="Hi, my name is Kartik!"
+if (sentence.indexOf("Kartik")!==-1)
+alert("Kartik is in there!");
+
+
+
+// slice(start, [end]) Returns a substring of the string based on the “start” and “end” index arguments, NOT including the “end” index itself. “End” is optional, and if none is specified, the slice includes all characters from “start” to end of string.
+var text="excellent";
+var text1,text2;
+text1=text.slice(0,4) //returns "exce" 0 start index and 4 end!
+
+text2=text.slice(2,4) //returns "ce"
+console.log(text1)
+console.log(text2)
+
+
+//substr(start, [length]) Returns the characters in a string beginning at “start” and through the specified number of characters, “length”. “Length” is optional, and if omitted, up to the end of the string is assumed.
+var text="Awesome"
+var subtext1=text.substring(0,4) //returns Awes
+var subtext2=text.substring(2,4) //returns "es"
+console.log(subtext1);
+console.log(subtext2)
